@@ -8,10 +8,10 @@ import customtkinter as ctk
 
 
 KB = Keyboard()
-PB = Plugboard(["AR"])
-RT_1 = Rotor(rotor_0_3, "K")
-RT_2 = Rotor(rotor_0_1, "V")
-RT_3 = Rotor(rotor_0_2, "C")
+PB = Plugboard(["AR", "XS", "PO"])
+RT_1 = Rotor(rotor_0_1, "K")
+RT_2 = Rotor(rotor_0_2, "V")
+RT_3 = Rotor(rotor_0_3, "C")
 RF = Reflector(reflector_0_1)
 
 RT_1.rotate_to_letter('H')
@@ -60,7 +60,7 @@ class GUI:
         return input
 
     def encipher(self):
-        output = run_enigma(self.read_input(), KB, PB, RT_1, RT_3, RT_2, RF)
+        output = run_enigma(self.read_input(), KB, PB, RT_1, RT_2, RT_3, RF)
         self.show_output(output)
 
     def show_output(self, output):

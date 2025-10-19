@@ -21,3 +21,7 @@ class Plugboard:
         letter = self.left[signal]
         signal = self.right.find(letter)
         return signal
+
+# PB = Plugboard(["AR", "XS", "PO"])
+# print(PB.forward(0))
+# print(PB.backwards(17))
