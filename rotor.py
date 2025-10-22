@@ -9,11 +9,13 @@ class Rotor:
     def forward(self, signal):
         letter = self.right[signal]
         signal = self.left.find(letter)
+        print(f"rotor forward: {self.left[signal]}")
         return signal
 
     def backward(self, signal):
         letter = self.left[signal]
         signal = self.right.find(letter)
+        print(f"rotor backward: {self.right[signal]}")
         return signal
 
     def rotate(self, n=0):

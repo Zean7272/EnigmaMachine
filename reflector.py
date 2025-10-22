@@ -7,5 +7,7 @@ class Reflector:
 
     def reflect(self, signal):
         letter = self.right[signal]
+        print(f"letter in: {letter}")
         signal = self.left.find(letter)
+        print(f"letter out: {self.left[signal]}")
         return signal

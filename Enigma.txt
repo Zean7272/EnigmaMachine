@@ -1,8 +1,0 @@
-flow of data:
-input => plugboard => rotors => plugboard => output
-
-settings:
-1- rotor order
-2- ring setting
-3- rotor starting positions
-4- plugboard connections

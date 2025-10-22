@@ -10,6 +10,7 @@ class Keyboard:
         #     letter = "*"
 
         signal = alpha_0.find(letter)
+        print(f"keyboard forward: {letter}")
         return signal
 
     def backward(self, signal):
@@ -20,6 +21,7 @@ class Keyboard:
         #     letter = ","
         # if letter == "*":
         #     letter = "."
+        print(f"keyboard backward: {letter}")
         return letter
 
 # kb = Keyboard()

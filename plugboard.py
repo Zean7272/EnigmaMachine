@@ -14,12 +14,16 @@ class Plugboard:
 
     def forward(self, signal):
         letter = self.right[signal]
+
         signal = self.left.find(letter)
+        print(f"plugboard forward: {self.left[signal]}")
         return signal
 
-    def backwards(self, signal):
+    def backward(self, signal):
         letter = self.left[signal]
+
         signal = self.right.find(letter)
+        print(f"plugboard backward: {self.right[signal]}")
         return signal
 
 # PB = Plugboard(["AR", "XS", "PO"])
